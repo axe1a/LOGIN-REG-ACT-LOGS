@@ -1,0 +1,258 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Page Heading */
+h1 {
+    text-align: center;
+    color: #001722;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Container Styling */
+.container-reg, .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-reg {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: float 4s ease-in-out infinite;
+}
+
+.container-reg:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    max-width: 500px;
+    text-align: center;
+}
+
+.container-reg header {
+    font-size: 24px;
+    color: #013D5A;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Forms Styling */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+    border-color: #013D5A;
+    box-shadow: 0 0 5px rgba(1, 61, 90, 0.3);
+}
+
+form input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Search Form Styling */
+form[method="GET"] {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form[method="GET"] input[type="text"] {
+    width: 60%;
+    padding: 10px 15px;
+    border: 2px solid #013D5A;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+form[method="GET"] input[type="text"]:focus {
+    border-color: #013D5A;
+    box-shadow: 0 0 10px #001722;
+}
+
+form[method="GET"] input[type="submit"] {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #013D5A;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form[method="GET"] input[type="submit"]:hover {
+    background-color: #025A87;
+}
+
+/* Auth Forms (Register/Login) */
+.register-form, .login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputAuth {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.inputAuth label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.inputAuth input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.inputAuth input:focus {
+    outline: none;
+    border-color: #013D5A;
+    box-shadow: 0 0 5px rgba(1, 61, 90, 0.3);
+}
+
+/* Buttons */
+.button-container input[type="submit"], .deleteBtn input[type="submit"] {
+    background-color: #013D5A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container input[type="submit"]:hover, .deleteBtn input[type="submit"]:hover {
+    background-color: #025A87;
+}
+
+.deleteBtn input[type="submit"] {
+    background-color: #f44336;
+}
+
+.deleteBtn input[type="submit"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Links */
+a, .register-link {
+    color: #013D5A;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover, .register-link:hover {
+    color: #025A87;
+    text-decoration: underline;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+table th {
+    background-color: #f1f4f8;
+    color: #001722;
+    font-weight: 600;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Messages */
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    color: #333;
+}
+
+/* Delete Confirmation */
+.container {
+    background-color: #ffebee !important;
+    border: 2px solid #f44336 !important;
+}
