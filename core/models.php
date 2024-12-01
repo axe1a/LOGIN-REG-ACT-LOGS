@@ -32,7 +32,7 @@ function searchForANurse($pdo, $searched_by, $searchQuery) {
 	$stmt = $pdo->prepare($sql);
 	$executeQuery = $stmt->execute(["%".$searchQuery."%"]);
 	if ($executeQuery) {
-		insertAuditLog($pdo, $searched_by, 'Search', 'Nurse',  'N/A', 'Searched for a Nurse');
+		insertAuditLog($pdo, $searched_by, 'Search', 'Nurse',  'N/A', 'Searched for "'. $searchQuery . '"');
 		return $stmt->fetchAll();
 	}
 }
